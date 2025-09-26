@@ -132,7 +132,7 @@ export default function AppSidebar() {
           </SidebarGroupContent>
         </SidebarGroup>
         {/* collaspible */}
-        <Collapsible defaultOpen className="group/collapsible">
+        <Collapsible className="group/collapsible">
           <SidebarGroup>
             <SidebarGroupLabel asChild>
               <CollapsibleTrigger>
