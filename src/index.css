@@ -143,3 +143,28 @@
     --sidebar-ring: oklch(0.439 0 0);
   }
 }
+.scroll-area {
+  --sb-track-color: var(--color-accent);
+  --sb-thumb-color: var(--color-accent-foreground);
+  --sb-size: 6px;
+}
+
+.scroll-area::-webkit-scrollbar {
+  width: var(--sb-size);
+}
+
+.scroll-area::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 23px;
+}
+
+.scroll-area::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 23px;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  .scroll-area {
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+  }
+}

@@ -27,7 +27,7 @@ export default function AppAreaChart() {
     { month: "June", desktop: 214, mobile: 140 },
   ];
   return (
-    <div>
+    <div className="">
       <h1 className="mb-6 text-lg font-medium">Total usage</h1>
       <ChartContainer config={chartConfig} className="min-h-[200px] w-full">
         <AreaChart accessibilityLayer data={chartData}>
