@@ -168,3 +168,27 @@
     scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
   }
 }
+.sidebar {
+  --sb-track-color: var(--color-accent);
+  --sb-thumb-color: var(--color-accent-foreground);
+  --sb-size: 6px;
+}
+.sidebar::-webkit-scrollbar {
+  width: var(--sb-size);
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 23px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 23px;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  .sidebar {
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+  }
+}

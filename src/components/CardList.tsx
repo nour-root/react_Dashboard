@@ -95,7 +95,7 @@ export default function CardList({ title }: { title: string }) {
         {list.map((item) => (
           <Card
             key={item.id}
-            className="flex flex-row items-center justify-between gap-4 py-1 px-2"
+            className="flex flex-row items-center justify-start gap-4 py-1.5 px-2"
           >
             <div className="w-12 h-12 rounded-sm relative overflow-hidden">
               <img src={item.image} className="h-full w-full object-cover" />
@@ -106,7 +106,7 @@ export default function CardList({ title }: { title: string }) {
               </CardTitle>
               <Badge variant="default">{item.badge}</Badge>
             </CardContent>
-            <CardFooter>{item.count / 1000}k</CardFooter>
+            <CardFooter className="ml-auto">{item.count / 1000}k</CardFooter>
           </Card>
         ))}
       </div>

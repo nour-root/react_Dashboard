@@ -46,7 +46,7 @@ const items = [
     icon: Home,
   },
   {
-    title: "Inbox",
+    title: "payments",
     url: "#",
     icon: Inbox,
   },
@@ -87,7 +87,7 @@ export default function AppSidebar() {
         </SidebarMenu>
         <SidebarSeparator />
       </SidebarHeader>
-      <SidebarContent>
+      <SidebarContent className="sidebar">
         <SidebarGroup>
           <SidebarGroupLabel>Application</SidebarGroupLabel>
           <SidebarGroupContent>

@@ -16,7 +16,9 @@ import { SidebarTrigger } from "./ui/sidebar";
 export default function Header() {
   const { setTheme } = useTheme();
   return (
-    <header className={`px-4 py-6 flex items-center justify-between gap-4`}>
+    <header
+      className={`p-4 flex items-center justify-between gap-4 sticky top-0 bg-background z-10`}
+    >
       <SidebarTrigger />
       <div className={`flex items-center gap-4`}>
         <Link to={"/"}>Dashboard</Link>
