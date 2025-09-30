@@ -47,7 +47,7 @@ const items = [
   },
   {
     title: "payments",
-    url: "#",
+    url: "/users/payments",
     icon: Inbox,
   },
   {
